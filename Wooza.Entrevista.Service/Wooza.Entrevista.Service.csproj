@@ -43,6 +43,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="FromHeaderAttribute, Version=2.0.4.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FromHeaderAttribute.2.0.4\lib\net45\FromHeaderAttribute.dll</HintPath>
     </Reference>
@@ -86,12 +92,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\WoozaEntrevista_DB.mdf" />
+    <Content Include="App_Data\WoozaEntrevista_DB_log.ldf">
+      <DependentUpon>WoozaEntrevista_DB.mdf</DependentUpon>
+    </Content>
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\PesquisasController.cs" />
+    <Compile Include="Controllers\PlanosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -107,9 +119,21 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Wooza.Entrevista.Dominio\Wooza.Entrevista.Dominio.csproj">
+      <Project>{8736e7f1-52e1-45a5-afca-43fda63fa08c}</Project>
+      <Name>Wooza.Entrevista.Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Wooza.Entrevista.Infraestrutura.Business\Wooza.Entrevista.Infraestrutura.Business.csproj">
+      <Project>{e6112a78-a844-41a0-b636-3cb0fdf1ab57}</Project>
+      <Name>Wooza.Entrevista.Infraestrutura.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Wooza.Entrevista.Infraestrutura.Data\Wooza.Entrevista.Infraestrutura.Data.csproj">
+      <Project>{11e6e279-64a5-4ec0-b767-cdfacb489511}</Project>
+      <Name>Wooza.Entrevista.Infraestrutura.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

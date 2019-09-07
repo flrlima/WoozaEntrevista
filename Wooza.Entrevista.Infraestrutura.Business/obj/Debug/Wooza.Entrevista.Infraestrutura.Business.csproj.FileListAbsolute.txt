@@ -1,0 +1,12 @@
+C:\Users\Fabio Lima\source\repos\WoozaEntrevista\Wooza.Entrevista.Infraestrutura.Business\obj\Debug\Wooza.Entrevista.Infraestrutura.Business.csprojAssemblyReference.cache
+C:\Users\Fabio Lima\source\repos\WoozaEntrevista\Wooza.Entrevista.Infraestrutura.Business\obj\Debug\Wooza.Entrevista.Infraestrutura.Business.csproj.CoreCompileInputs.cache
+C:\Users\Fabio Lima\source\repos\WoozaEntrevista\Wooza.Entrevista.Infraestrutura.Business\bin\Debug\Wooza.Entrevista.Infraestrutura.Business.dll
+C:\Users\Fabio Lima\source\repos\WoozaEntrevista\Wooza.Entrevista.Infraestrutura.Business\bin\Debug\Wooza.Entrevista.Infraestrutura.Business.pdb
+C:\Users\Fabio Lima\source\repos\WoozaEntrevista\Wooza.Entrevista.Infraestrutura.Business\bin\Debug\Wooza.Entrevista.Dominio.dll
+C:\Users\Fabio Lima\source\repos\WoozaEntrevista\Wooza.Entrevista.Infraestrutura.Business\bin\Debug\EntityFramework.dll
+C:\Users\Fabio Lima\source\repos\WoozaEntrevista\Wooza.Entrevista.Infraestrutura.Business\bin\Debug\Wooza.Entrevista.Dominio.pdb
+C:\Users\Fabio Lima\source\repos\WoozaEntrevista\Wooza.Entrevista.Infraestrutura.Business\bin\Debug\Wooza.Entrevista.Dominio.dll.config
+C:\Users\Fabio Lima\source\repos\WoozaEntrevista\Wooza.Entrevista.Infraestrutura.Business\bin\Debug\EntityFramework.xml
+C:\Users\Fabio Lima\source\repos\WoozaEntrevista\Wooza.Entrevista.Infraestrutura.Business\obj\Debug\Wooza.Entrevista.Infraestrutura.Business.csproj.CopyComplete
+C:\Users\Fabio Lima\source\repos\WoozaEntrevista\Wooza.Entrevista.Infraestrutura.Business\obj\Debug\Wooza.Entrevista.Infraestrutura.Business.dll
+C:\Users\Fabio Lima\source\repos\WoozaEntrevista\Wooza.Entrevista.Infraestrutura.Business\obj\Debug\Wooza.Entrevista.Infraestrutura.Business.pdb
