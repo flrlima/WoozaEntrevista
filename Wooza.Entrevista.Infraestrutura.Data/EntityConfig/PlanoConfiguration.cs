@@ -9,6 +9,9 @@ namespace Wooza.Entrevista.Infraestrutura.Data.EntityConfig
         {
             HasKey(p => p.PlanoId);
 
+            HasIndex(p => p.CodigoDoPlano)
+                .IsUnique(true);
+
             HasMany(s => s.Ddds)
                 .WithMany(c => c.Planos)
                 .Map(cs =>

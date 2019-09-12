@@ -6,12 +6,10 @@
     "\\Wooza.Entrevista.Dominio\\Enum",
     "\\Wooza.Entrevista.Infraestrutura.Business",
     "\\Wooza.Entrevista.Infraestrutura.Business\\Business",
-    "\\Wooza.Entrevista.Infraestrutura.Data",
-    "\\Wooza.Entrevista.Infraestrutura.Data\\Contexto",
-    "\\Wooza.Entrevista.Infraestrutura.Data\\EntityConfig",
-    "\\Wooza.Entrevista.Infraestrutura.Data\\Migrations",
-    "\\Wooza.Entrevista.Infraestrutura.Data\\Repositorio"
+    "\\Wooza.Entrevista.Service",
+    "\\Wooza.Entrevista.Service\\AutoMapper",
+    "\\Wooza.Entrevista.Service\\Controllers"
   ],
-  "SelectedNode": "\\Wooza.Entrevista.Service\\Web.config",
+  "SelectedNode": "\\Wooza.Entrevista.Service\\AutoMapper\\ToDtoPlanoDomainConfig.cs",
   "PreviewInSolutionExplorer": false
 }

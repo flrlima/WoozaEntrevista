@@ -48,9 +48,9 @@ namespace Wooza.Entrevista.Service.Controllers
         }
 
         [HttpGet]
-        [Route("ConsultarPlano/{id}")]
+        [Route("ConsultarPlano/{codigoDoPlano}")]
         [ResponseType(typeof(Plano))]
-        public HttpResponseMessage ListarController(Guid id)
+        public HttpResponseMessage ListarController(int codigoDoPlano)
         {
             if (ModelState.IsValid)
             {
@@ -58,7 +58,7 @@ namespace Wooza.Entrevista.Service.Controllers
                 {
                     _planoBusiness = new PlanoBusiness();
 
-                    var plano = _planoBusiness.Listar(id);
+                    var plano = _planoBusiness.Listar(codigoDoPlano);
 
                     if (plano.PlanoId != Guid.Empty)
                         return Request.CreateResponse(HttpStatusCode.OK, plano);

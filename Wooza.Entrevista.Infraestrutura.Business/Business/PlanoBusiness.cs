@@ -16,9 +16,9 @@ namespace Wooza.Entrevista.Infraestrutura.Business.Business
         {
             _planoRepository.Salvar(plano);
         }
-        public Plano Listar(Guid id)
+        public Plano Listar(int codigoDoPlano)
         {
-            return _planoRepository.Listar(id);
+            return _planoRepository.Listar(codigoDoPlano);
         }
 
         public IEnumerable<Plano> ListarTodos()

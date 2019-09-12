@@ -21,9 +21,9 @@ namespace Wooza.Entrevista.Infraestrutura.Data
             _context.SaveChanges();
         }
 
-        public Plano Listar(Guid id)
+        public Plano Listar(int codigoDoPlano)
         {
-            var plano = _context.Plano.Find(id);
+            var plano = _context.Plano.Find(codigoDoPlano);
             return plano;
         }
 
