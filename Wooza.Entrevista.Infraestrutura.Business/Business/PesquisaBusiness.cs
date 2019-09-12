@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Wooza.Entrevista.Dominio.Entidades;
 using Wooza.Entrevista.Dominio.Enum;
-using Wooza.Entrevista.Dominio.Repositorio;
+using Wooza.Entrevista.Infraestrutura.Data;
 
 namespace Wooza.Entrevista.Infraestrutura.Business.Business
 {

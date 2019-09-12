@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Wooza.Entrevista.Dominio.Enum;
 
 namespace Wooza.Entrevista.Dominio.Entidades
@@ -16,5 +13,11 @@ namespace Wooza.Entrevista.Dominio.Entidades
         public double Valor { get; set; }
         public TipoPlanoEnum Tipo { get; set; }
         public OperadoraEnum Operadora { get; set; }
+        public virtual ICollection<DDD> Ddds { get; set; }
+
+        public Plano()
+        {
+            this.Ddds = new List<DDD>();
+        }
     }
 }

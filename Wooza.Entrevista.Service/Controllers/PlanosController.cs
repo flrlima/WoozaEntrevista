@@ -10,7 +10,6 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using Wooza.Entrevista.Dominio.Entidades;
 using Wooza.Entrevista.Dominio.Enum;
-using Wooza.Entrevista.Dominio.Repositorio;
 using Wooza.Entrevista.Infraestrutura.Business.Business;
 using Wooza.Entrevista.Infraestrutura.Data.Contexto;
 
@@ -86,7 +85,7 @@ namespace Wooza.Entrevista.Service.Controllers
                 {
                     _planoBusiness = new PlanoBusiness();
 
-                    if (plano.PlanoId != Guid.Empty)
+                    if (id != Guid.Empty)
                     {
                         _planoBusiness.Atualizar(id, plano);
                         return Request.CreateResponse(HttpStatusCode.OK, plano);
@@ -106,7 +105,7 @@ namespace Wooza.Entrevista.Service.Controllers
 
         [HttpPost]
         [Route("CriarPlano")]
-        //[ResponseType(typeof(Plano))]
+        [ResponseType(typeof(Plano))]
         public HttpResponseMessage CriarPlanoController([FromBody]Plano plano)
         {
             if (ModelState.IsValid)

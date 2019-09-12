@@ -50,6 +50,10 @@
       <Project>{8736e7f1-52e1-45a5-afca-43fda63fa08c}</Project>
       <Name>Wooza.Entrevista.Dominio</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Wooza.Entrevista.Infraestrutura.Data\Wooza.Entrevista.Infraestrutura.Data.csproj">
+      <Project>{11e6e279-64a5-4ec0-b767-cdfacb489511}</Project>
+      <Name>Wooza.Entrevista.Infraestrutura.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

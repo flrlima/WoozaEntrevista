@@ -64,7 +64,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contexto\WoozaEntrevistaContexto.cs" />
+    <Compile Include="EntityConfig\DDDConfiguration.cs" />
+    <Compile Include="EntityConfig\PlanoConfiguration.cs" />
+    <Compile Include="Contexto\Configuration.cs" />
+    <Compile Include="Migrations\201909110354486_InitialCreate2.cs" />
+    <Compile Include="Migrations\201909110354486_InitialCreate2.Designer.cs">
+      <DependentUpon>201909110354486_InitialCreate2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorio\PesquisaRepository.cs" />
+    <Compile Include="Repositorio\PlanoRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -87,6 +96,11 @@
       <Project>{8736e7f1-52e1-45a5-afca-43fda63fa08c}</Project>
       <Name>Wooza.Entrevista.Dominio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201909110354486_InitialCreate2.resx">
+      <DependentUpon>201909110354486_InitialCreate2.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
