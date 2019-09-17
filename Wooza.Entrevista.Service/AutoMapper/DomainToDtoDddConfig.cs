@@ -18,6 +18,7 @@ namespace Wooza.Entrevista.Service.AutoMapper
         protected override void Configure()
         {
             CreateMap<DddDto, DDD>();
+
         }
     }
 }

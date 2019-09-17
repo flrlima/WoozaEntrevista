@@ -41,8 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\DddBusiness.cs" />
     <Compile Include="Business\PesquisaBusiness.cs" />
     <Compile Include="Business\PlanoBusiness.cs" />
+    <Compile Include="Dto\DddDto.cs" />
+    <Compile Include="Dto\PlanoDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

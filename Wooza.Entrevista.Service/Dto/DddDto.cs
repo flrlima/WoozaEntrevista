@@ -5,16 +5,21 @@ namespace Wooza.Entrevista.Service.Dto
 {
     public class DddDto
     {
-        //public Guid DddId { get; set; }
         public string DddDigito { get; set; }
         public string DddEstadoSigla { get; set; }
         public string DddCidade { get; set; }
 
-        public virtual ICollection<Plano> Planos { get; set; }
+        public virtual ICollection<CodigoDoPlanoDto> CodigoDoPlanoDto { get; set; }
 
         public DddDto()
         {
-            this.Planos = new List<Plano>();
+            this.CodigoDoPlanoDto = new List<CodigoDoPlanoDto>();
         }
+
+    }
+
+    public class DddDtoDigito
+    {
+        public string DddDigito { get; set; }
     }
 }

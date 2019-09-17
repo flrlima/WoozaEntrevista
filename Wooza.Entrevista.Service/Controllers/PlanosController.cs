@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -11,7 +8,7 @@ using System.Web.Http.Description;
 using Wooza.Entrevista.Dominio.Entidades;
 using Wooza.Entrevista.Dominio.Enum;
 using Wooza.Entrevista.Infraestrutura.Business.Business;
-using Wooza.Entrevista.Infraestrutura.Data.Contexto;
+using Wooza.Entrevista.Service.Dto;
 
 namespace Wooza.Entrevista.Service.Controllers
 {
@@ -22,7 +19,7 @@ namespace Wooza.Entrevista.Service.Controllers
 
         [HttpGet]
         [Route("ConsultarPlanos")]
-        [ResponseType(typeof(List<Plano>))]
+        [ResponseType(typeof(List<PlanoDto>))]
         public HttpResponseMessage ConsultarTodosOsPlanosController()
         {
             if (ModelState.IsValid)
@@ -46,7 +43,6 @@ namespace Wooza.Entrevista.Service.Controllers
             else
                 return Request.CreateResponse(HttpStatusCode.BadRequest, new HttpError(ModelState.ToString()));
         }
-
         [HttpGet]
         [Route("ConsultarPlano/{codigoDoPlano}")]
         [ResponseType(typeof(Plano))]
@@ -60,7 +56,7 @@ namespace Wooza.Entrevista.Service.Controllers
 
                     var plano = _planoBusiness.Listar(codigoDoPlano);
 
-                    if (plano.PlanoId != Guid.Empty)
+                    if (plano != null)
                         return Request.CreateResponse(HttpStatusCode.OK, plano);
                     else
                         return Request.CreateResponse(HttpStatusCode.NotFound, "Plano não encontrado");

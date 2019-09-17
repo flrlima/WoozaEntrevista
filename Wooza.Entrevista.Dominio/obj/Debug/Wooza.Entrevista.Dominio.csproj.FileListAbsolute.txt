@@ -1,6 +1,0 @@
-C:\Users\Fabio Lima\source\repos\WoozaEntrevista\Wooza.Entrevista.Dominio\bin\Debug\Wooza.Entrevista.Dominio.dll
-C:\Users\Fabio Lima\source\repos\WoozaEntrevista\Wooza.Entrevista.Dominio\bin\Debug\Wooza.Entrevista.Dominio.pdb
-C:\Users\Fabio Lima\source\repos\WoozaEntrevista\Wooza.Entrevista.Dominio\obj\Debug\Wooza.Entrevista.Dominio.csprojAssemblyReference.cache
-C:\Users\Fabio Lima\source\repos\WoozaEntrevista\Wooza.Entrevista.Dominio\obj\Debug\Wooza.Entrevista.Dominio.csproj.CoreCompileInputs.cache
-C:\Users\Fabio Lima\source\repos\WoozaEntrevista\Wooza.Entrevista.Dominio\obj\Debug\Wooza.Entrevista.Dominio.dll
-C:\Users\Fabio Lima\source\repos\WoozaEntrevista\Wooza.Entrevista.Dominio\obj\Debug\Wooza.Entrevista.Dominio.pdb

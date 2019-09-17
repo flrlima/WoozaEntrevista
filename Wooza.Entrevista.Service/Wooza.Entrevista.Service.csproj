@@ -121,6 +121,7 @@
     <Compile Include="AutoMapper\DomainToDtoPlanoConfig.cs" />
     <Compile Include="AutoMapper\ToDtoDddDomainConfig.cs" />
     <Compile Include="AutoMapper\ToDtoPlanoDomainConfig.cs" />
+    <Compile Include="Controllers\DddController.cs" />
     <Compile Include="Controllers\PesquisasController.cs" />
     <Compile Include="Controllers\PlanosController.cs" />
     <Compile Include="Dto\DddDto.cs" />

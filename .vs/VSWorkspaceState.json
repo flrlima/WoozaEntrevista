@@ -3,13 +3,9 @@
     "",
     "\\Wooza.Entrevista.Dominio",
     "\\Wooza.Entrevista.Dominio\\Entidades",
-    "\\Wooza.Entrevista.Dominio\\Enum",
-    "\\Wooza.Entrevista.Infraestrutura.Business",
-    "\\Wooza.Entrevista.Infraestrutura.Business\\Business",
     "\\Wooza.Entrevista.Service",
-    "\\Wooza.Entrevista.Service\\AutoMapper",
-    "\\Wooza.Entrevista.Service\\Controllers"
+    "\\Wooza.Entrevista.Service\\App_Data"
   ],
-  "SelectedNode": "\\Wooza.Entrevista.Service\\AutoMapper\\ToDtoPlanoDomainConfig.cs",
+  "SelectedNode": "\\Wooza.Entrevista.Dominio\\Entidades\\DDD.cs",
   "PreviewInSolutionExplorer": false
 }

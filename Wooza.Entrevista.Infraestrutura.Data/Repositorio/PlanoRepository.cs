@@ -23,8 +23,8 @@ namespace Wooza.Entrevista.Infraestrutura.Data
 
         public Plano Listar(int codigoDoPlano)
         {
-            var plano = _context.Plano.Find(codigoDoPlano);
-            return plano;
+            var plano = _context.Plano.Where(x => x.CodigoDoPlano == codigoDoPlano);
+            return plano.FirstOrDefault();
         }
 
         public IEnumerable<Plano> ListarTodos()
